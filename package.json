@@ -1,15 +1,15 @@
 {
     "name": "jupyterlab_mermaid_latest_extension",
-    "version": "0.1.0",
+    "version": "0.1.2",
     "description": "Jupyterlab extension that brings the lates version of the mermaid library to the rendering in notebooks and markdown",
     "keywords": [
         "jupyter",
         "jupyterlab",
         "jupyterlab-extension"
     ],
-    "homepage": "",
+    "homepage": "https://github.com/stellarshenson/jupyterlab_mermaid_latest_extension",
     "bugs": {
-        "url": "/issues"
+        "url": "https://github.com/stellarshenson/jupyterlab_mermaid_latest_extension/issues"
     },
     "license": "BSD-3-Clause",
     "author": {
@@ -26,7 +26,7 @@
     "style": "style/index.css",
     "repository": {
         "type": "git",
-        "url": ".git"
+        "url": "https://github.com/stellarshenson/jupyterlab_mermaid_latest_extension.git"
     },
     "scripts": {
         "build": "jlpm build:lib && jlpm build:labextension:dev",
@@ -57,8 +57,10 @@
     },
     "dependencies": {
         "@jupyterlab/application": "^4.0.0",
+        "@jupyterlab/apputils": "^4.0.0",
         "@jupyterlab/coreutils": "^6.0.0",
-        "@jupyterlab/services": "^7.0.0"
+        "@jupyterlab/mermaid": "^4.5.0",
+        "mermaid": "^11.15.0"
     },
     "devDependencies": {
         "@jupyterlab/builder": "^4.0.0",
@@ -89,7 +91,13 @@
         "yjs": "^13.5.0"
     },
     "resolutions": {
-        "lib0": "0.2.111"
+        "lib0": "0.2.111",
+        "webpack": "5.106.0",
+        "chalk": "4.1.2"
+    },
+    "overrides": {
+        "webpack": "5.106.0",
+        "chalk": "4.1.2"
     },
     "sideEffects": [
         "style/*.css",
@@ -100,18 +108,14 @@
         "access": "public"
     },
     "jupyterlab": {
-        "discovery": {
-            "server": {
-                "managers": [
-                    "pip"
-                ],
-                "base": {
-                    "name": "jupyterlab_mermaid_latest_extension"
-                }
-            }
-        },
         "extension": true,
-        "outputDir": "jupyterlab_mermaid_latest_extension/labextension"
+        "outputDir": "jupyterlab_mermaid_latest_extension/labextension",
+        "sharedPackages": {
+            "mermaid": {
+                "bundled": true,
+                "singleton": false
+            }
+        }
     },
     "eslintIgnore": [
         "node_modules",

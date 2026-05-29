@@ -40,10 +40,6 @@ jobs:
         set -eux
         python -m pip install .[test]
 
-        pytest -vv -r ap --cov jupyterlab_mermaid_latest_extension
-        jupyter server extension list
-        jupyter server extension list 2>&1 | grep -ie "jupyterlab_mermaid_latest_extension.*OK"
-
         jupyter labextension list
         jupyter labextension list 2>&1 | grep -ie "jupyterlab_mermaid_latest_extension.*OK"
         python -m jupyterlab.browser_check
@@ -84,10 +80,6 @@ jobs:
         sudo rm -rf $(which node)
 
         pip install "jupyterlab>=4.0.0,<5" jupyterlab_mermaid_latest_extension*.whl
-
-
-        jupyter server extension list
-        jupyter server extension list 2>&1 | grep -ie "jupyterlab_mermaid_latest_extension.*OK"
 
         jupyter labextension list
         jupyter labextension list 2>&1 | grep -ie "jupyterlab_mermaid_latest_extension.*OK"
