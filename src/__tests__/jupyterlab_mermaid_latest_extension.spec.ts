@@ -12,6 +12,14 @@ jest.mock('mermaid', () => ({
   }
 }));
 
+// The manager reads the version from the package manifest (mermaid 11.x does
+// not expose `version` on the default export), so mock it too.
+jest.mock(
+  'mermaid/package.json',
+  () => ({ __esModule: true, default: { version: '11.15.0-test' } }),
+  { virtual: true }
+);
+
 describe('patchMermaidManager', () => {
   beforeEach(() => initialize.mockClear());
 
