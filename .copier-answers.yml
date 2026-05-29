@@ -1,0 +1,16 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: v4.5.2
+_src_path: https://github.com/jupyterlab/extension-template
+author_email: konrad.jelen+github@gmail.com
+author_name: Stellars Henson
+has_ai_rules: false
+has_binder: false
+has_settings: false
+kind: frontend-and-server
+labextension_name: jupyterlab_mermaid_latest_extension
+project_short_description: Jupyterlab extension that brings the lates version of the
+    mermaid library to the rendering in notebooks and markdown
+python_name: jupyterlab_mermaid_latest_extension
+repository: ''
+test: true
+

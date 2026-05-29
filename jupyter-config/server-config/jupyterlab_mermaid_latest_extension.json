@@ -1,0 +1,7 @@
+{
+  "ServerApp": {
+    "jpserver_extensions": {
+      "jupyterlab_mermaid_latest_extension": true
+    }
+  }
+}
