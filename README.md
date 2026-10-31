@@ -44,7 +44,7 @@ venn-beta
 
 ## Installation
 
-Requires JupyterLab 4.0.0 or higher.
+Requires JupyterLab 4.6.0 or higher.
 
 ```bash
 pip install jupyterlab_mermaid_latest_extension

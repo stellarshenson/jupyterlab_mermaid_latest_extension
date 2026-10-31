@@ -134,3 +134,7 @@ dmypy.json
 
 # Project-local node environment
 .nodeenv/
+
+# Run output
+logs/
+tmp/
