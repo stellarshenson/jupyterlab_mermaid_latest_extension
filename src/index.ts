@@ -8,7 +8,7 @@ import { IMermaidManager } from '@jupyterlab/mermaid';
 import { patchMermaidManager } from './manager';
 
 const plugin: JupyterFrontEndPlugin<void> = {
-  id: 'jupyterlab_mermaid_latest_extension:plugin',
+  id: '@stellarshenson/jupyterlab-mermaid-latest-extension:plugin',
   description:
     'Replaces JupyterLab bundled Mermaid with the latest version via monkey-patch',
   autoStart: true,
@@ -20,7 +20,7 @@ const plugin: JupyterFrontEndPlugin<void> = {
     themes: IThemeManager | null
   ) => {
     console.log(
-      'JupyterLab extension jupyterlab_mermaid_latest_extension is activated!'
+      'JupyterLab extension @stellarshenson/jupyterlab-mermaid-latest-extension is activated!'
     );
     await patchMermaidManager(manager, themes);
     console.log(

@@ -1,7 +1,7 @@
 # jupyterlab_mermaid_latest_extension
 
 [![GitHub Actions](https://github.com/stellarshenson/jupyterlab_mermaid_latest_extension/actions/workflows/build.yml/badge.svg)](https://github.com/stellarshenson/jupyterlab_mermaid_latest_extension/actions/workflows/build.yml)
-[![npm version](https://img.shields.io/npm/v/jupyterlab_mermaid_latest_extension.svg)](https://www.npmjs.com/package/jupyterlab_mermaid_latest_extension)
+[![npm version](https://img.shields.io/npm/v/@stellarshenson/jupyterlab-mermaid-latest-extension.svg)](https://www.npmjs.com/package/@stellarshenson/jupyterlab-mermaid-latest-extension)
 [![PyPI version](https://img.shields.io/pypi/v/jupyterlab_mermaid_latest_extension.svg)](https://pypi.org/project/jupyterlab_mermaid_latest_extension/)
 [![Total PyPI downloads](https://static.pepy.tech/badge/jupyterlab_mermaid_latest_extension)](https://pepy.tech/project/jupyterlab_mermaid_latest_extension)
 [![JupyterLab 4](https://img.shields.io/badge/JupyterLab-4-orange.svg)](https://jupyterlab.readthedocs.io/en/stable/)
@@ -18,8 +18,8 @@ JupyterLab extension that brings the latest version of the Mermaid diagram libra
 
 ## Features
 
-- **Latest Mermaid version** - renders diagrams with Mermaid 11.15.0, independent of JupyterLab 4.5's bundled 11.12.3
-- **New diagram types** - access beta and recently stabilised Mermaid diagrams (e.g., `venn-beta`) that the bundled version rejects with `UnknownDiagramError`
+- **Latest Mermaid version** - renders diagrams with Mermaid 11.17.2, independent of JupyterLab 4.6's bundled 11.16.1
+- **New diagram types** - access beta and recently stabilised Mermaid diagrams (e.g., `venn-beta`) before the bundled version carries them
 - **Transparent replacement** - notebooks, markdown cells, and `.md` files all render through the patched manager
 - **Theme aware** - respects JupyterLab dark/light theme and re-renders on theme change
 
@@ -29,7 +29,7 @@ JupyterLab 4 provides an `IMermaidManager` token that all Mermaid rendering flow
 
 ## Example
 
-A `venn-beta` diagram, unsupported by JupyterLab's bundled Mermaid, renders with this extension installed:
+A `venn-beta` diagram renders with this extension installed:
 
 ````markdown
 ```mermaid

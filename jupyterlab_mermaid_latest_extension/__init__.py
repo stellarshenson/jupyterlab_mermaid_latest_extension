@@ -9,5 +9,5 @@ except ImportError:
 def _jupyter_labextension_paths():
     return [{
         "src": "labextension",
-        "dest": "jupyterlab_mermaid_latest_extension"
+        "dest": "@stellarshenson/jupyterlab-mermaid-latest-extension"
     }]

@@ -49,8 +49,8 @@ artifacts = ["jupyterlab_mermaid_latest_extension/labextension"]
 exclude = [".github", "binder"]
 
 [tool.hatch.build.targets.wheel.shared-data]
-"jupyterlab_mermaid_latest_extension/labextension" = "share/jupyter/labextensions/jupyterlab_mermaid_latest_extension"
-"install.json" = "share/jupyter/labextensions/jupyterlab_mermaid_latest_extension/install.json"
+"jupyterlab_mermaid_latest_extension/labextension" = "share/jupyter/labextensions/@stellarshenson/jupyterlab-mermaid-latest-extension"
+"install.json" = "share/jupyter/labextensions/@stellarshenson/jupyterlab-mermaid-latest-extension/install.json"
 
 [tool.hatch.build.hooks.version]
 path = "jupyterlab_mermaid_latest_extension/_version.py"
