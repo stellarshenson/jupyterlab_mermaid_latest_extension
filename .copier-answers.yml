@@ -12,6 +12,6 @@ labextension_name: '@stellarshenson/jupyterlab-mermaid-latest-extension'
 project_short_description: Jupyterlab extension that brings the lates version of the
     mermaid library to the rendering in notebooks and markdown
 python_name: jupyterlab_mermaid_latest_extension
-repository: ''
+repository: https://github.com/stellarshenson/jupyterlab_mermaid_latest_extension
 test: true
 

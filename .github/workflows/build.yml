@@ -83,6 +83,7 @@ jobs:
 
         pip install "jupyterlab>=4.6,<5" jupyterlab_mermaid_latest_extension*.whl
 
+
         jupyter labextension list
         jupyter labextension list 2>&1 | grep -ie "@stellarshenson/jupyterlab-mermaid-latest-extension.*OK"
         python -m jupyterlab.browser_check --no-browser-test

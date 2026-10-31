@@ -1,6 +1,6 @@
 {
     "name": "@stellarshenson/jupyterlab-mermaid-latest-extension",
-    "version": "1.0.10",
+    "version": "1.0.11",
     "description": "Jupyterlab extension that brings the lates version of the mermaid library to the rendering in notebooks and markdown",
     "keywords": [
         "jupyter",

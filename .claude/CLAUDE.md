@@ -23,7 +23,7 @@ The following workspace rules are STRICTLY ENFORCED for this project:
 
 JupyterLab 4 extension that brings the latest version of the Mermaid diagram library to notebook and markdown rendering. Composed of a Python server extension (`jupyterlab_mermaid_latest_extension/`) and a TypeScript frontend extension (`src/`).
 
-- **npm package**: `jupyterlab_mermaid_latest_extension`
+- **npm package**: `@stellarshenson/jupyterlab-mermaid-latest-extension`
 - **PyPI package**: `jupyterlab_mermaid_latest_extension`
 - **GitHub owner**: `stellarshenson`
 - **Version**: managed in `package.json`, propagated by hatchling
